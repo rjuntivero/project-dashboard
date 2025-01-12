@@ -1,5 +1,5 @@
 :root {
-    --accent-blue: rgb(117, 181, 253);
+    --accent-blue: rgb(75, 144, 235);
     --gray-bg: #F2F0EF;
     --box-shadow: 0 6px 6px -1px rgb(199, 199, 199);
 }
@@ -28,7 +28,7 @@ html, body {
 }
 
 .dashboard {
-    background-color: rgb(117, 181, 253);
+    background-color: var(--accent-blue);
     grid-row: 1/5;
     color: white;
     padding: 16px;
@@ -90,6 +90,9 @@ h2 {
         padding: 4px;
         background: var(--gray-bg);
     }
+    img{
+        margin-right: 12px;
+    }
 }
 .profile {
     justify-self: end;
@@ -147,6 +150,9 @@ h2 {
     border-left: 6px solid orange;
     border-radius: 6px;
     padding: 16px;
+    p{
+        color: grey;
+    }
 }
 
 .card {
@@ -167,6 +173,9 @@ h2 {
     grid-template-rows: auto 1fr;
     grid-area: announcements;
     gap: 16px;
+    p {
+        color: grey;
+    }
 }
 
 .announcements-section ul {
